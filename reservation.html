@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>FanBase - Zapisywanie</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 580 Woox Travel
+
+https://templatemo.com/tm-580-woox-travel
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="about.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="about.html">Główna</a></li>
+                        <li><a href="reservation.html" class="active">Zapisz się</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="second-page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Zapisz się tutaj</h4>
+          <h2>Dołącz do nas!</h2>
+          <p>Dołącz do nas na niezapomnianym FanCon 2023 i odkryj fascynujący świat seriali i filmów jak nigdy dotąd!</p>
+          <div class="main-button"><a href="about.html">Dowiedz się więcej</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="more-info reservation-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-phone"></i>
+            <h4>Zadzwoń do nas</h4>
+            <a href="#">+84 556 750 001</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-envelope"></i>
+            <h4>Skontaktuj się przez e-mail</h4>
+            <a href="#">fanbase@email.com</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-map-marker"></i>
+            <h4>Odwiedź nas</h4>
+            <a href="#">Aleje Racławickie 18, Lublin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reservation-form">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                  <div id="map">
+                      <iframe src="https://maps.google.com/maps?q=Targi Lublin S.A.&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="450px" frameborder="0" style="border:0; border-top-left-radius: 23px; border-top-right-radius: 23px;" allowfullscreen=""></iframe>
+                  </div>
+              </div>
+              <div class="col-lg-12">
+                  <form id="reservation-form" name="gs" action="#" method="POST">
+                      <div class="row">
+                          <div class="col-lg-12">
+                              <h4>Zapisz się na <em>FanCon 2023</em> poprzez ten <em>formularz</em></h4>
+                          </div>
+                          <div class="col-lg-6">
+                              <fieldset>
+                                  <label for="firstName" class="form-label">Imię</label>
+                                  <input type="text" id="firstName" name="firstName" class="firstName" placeholder="Wprowadź imię" autocomplete="on" required>
+                              </fieldset>
+                          </div>
+                          <div class="col-lg-6">
+                              <fieldset>
+                                  <label for="lastName" class="form-label">Nazwisko</label>
+                                  <input type="text" id="lastName" name="lastName" class="lastName" placeholder="Wprowadź nazwisko" autocomplete="on" required>
+                              </fieldset>
+                          </div>
+                          <div class="col-lg-6">
+                              <fieldset>
+                                  <label for="phoneNumber" class="form-label">Numer telefonu</label>
+                                  <input type="text" id="phoneNumber" name="phoneNumber" class="phoneNumber" placeholder="Wprowadź numer telefonu" autocomplete="on" required>
+                              </fieldset>
+                          </div>
+                          <div class="col-lg-6">
+                              <fieldset>
+                                  <label for="ticketType" class="form-label">Typ biletu</label>
+                                  <select name="ticketType" class="form-select" aria-label="Default select example" id="ticketType" required>
+                                      <option selected>Wybierz typ biletu</option>
+                                      <option value="standardowy">Bilet standardowy</option>
+                                      <option value="vip">Bilet VIP</option>
+                                      <option value="deluxe">Bilet Deluxe</option>
+                                  </select>
+                              </fieldset>
+                          </div>
+                          <div class="col-lg-6">
+                              <fieldset>
+                                  <legend>Status wiekowy</legend>
+                                  <label>
+                                      <input type="radio" name="ageStatus" value="pełnoletnia" required> Osoba pełnoletnia
+                                  </label>
+                                  <label>
+                                      <input type="radio" name="ageStatus" value="niepełnoletnia"> Osoba niepełnoletnia
+                                  </label>
+                              </fieldset>
+                          </div>
+                          <div class="col-lg-6">
+                              <fieldset>
+                                  <legend>Zainteresowania</legend>
+                                  <label>
+                                      <input type="checkbox" name="interests" value="Gry"> Gry
+                                  </label>
+                                  <label>
+                                      <input type="checkbox" name="interests" value="Seriale"> Seriale
+                                  </label>
+                                  <label>
+                                      <input type="checkbox" name="interests" value="Filmy"> Filmy
+                                  </label>
+                              </fieldset>
+                          </div>
+                          <div class="col-lg-12">
+                              <fieldset>
+                                  <button class="main-button" type="submit">Zapisz się</button>
+                                  <div class="border-button">
+                                      <a href="form.html">Lista Zapisów</a>
+                                  </div>
+                              </fieldset>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright © 2036 <a href="#">Filip Zięba</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/form1.js"></script>
+
+  <script>
+    $(".option").click(function(){
+      $(".option").removeClass("active");
+      $(this).addClass("active"); 
+    });
+  </script>
+
+  </body>
+
+</html>

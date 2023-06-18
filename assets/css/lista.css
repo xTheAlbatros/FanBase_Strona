@@ -1,0 +1,38 @@
+body {
+    background-color: #241f20;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #cc0e34;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#reservation-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#reservation-table th,
+#reservation-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+}
+
+#reservation-table th {
+    background-color: #cc0e34;
+    font-weight: bold;
+}
+
